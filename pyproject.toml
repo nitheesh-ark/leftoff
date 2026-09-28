@@ -1,12 +1,12 @@
 [project]
 name = "leftoff"
-version = "0.1.1"
+version = "0.1.2"
 description = "Cli tool for managing project works."
 readme = "README.md"
 authors = [
     { name = "shaheen-coder", email = "shaheenvsa@gmail.com" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "pytest>=9.1.1",
     "textual>=8.2.8",

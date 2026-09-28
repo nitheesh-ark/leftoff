@@ -21,7 +21,7 @@ A fast, keyboard-driven **CLI + TUI** for tracking project **features** and **is
 [![Last Commit](https://img.shields.io/github/last-commit/shaheen-coder/leftoff?style=flat)](https://github.com/shaheen-coder/leftoff/commits)
 
 <!-- Tooling -->
-[![Python](https://img.shields.io/badge/python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Textual](https://img.shields.io/badge/TUI-Textual-6C5CE7?style=flat)](https://github.com/Textualize/textual)
 [![Rich](https://img.shields.io/badge/CLI-Rich-FF6F61?style=flat)](https://github.com/Textualize/rich)
 [![uv](https://img.shields.io/badge/managed%20with-uv-DE5FE9?style=flat)](https://github.com/astral-sh/uv)

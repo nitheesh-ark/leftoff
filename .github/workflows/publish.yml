@@ -7,8 +7,12 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Test Python ${{matrix.python-version}}
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version : ["3.12","3.13","3.14"]
 
     steps:
       - name: Checkout
@@ -20,13 +24,13 @@ jobs:
           enable-cache: true
 
       - name: Set up Python
-        run: uv python install 3.14
+        run: uv python install ${{matrix.python-version}}
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --python ${{matrix.python-version}}
 
       - name: Run tests
-        run: uv run pytest
+        run: uv run --python ${{matrix.python-version}} pytest
 
   publish:
     name: Build and Publish to PyPI
